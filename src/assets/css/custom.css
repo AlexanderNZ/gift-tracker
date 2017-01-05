@@ -1,0 +1,87 @@
+.table > thead > tr > td.gift-table-colour-tobedecided,
+.table > tbody > tr > td.gift-table-colour-tobedecided,
+.table > tfoot > tr > td.gift-table-colour-tobedecided,
+.table > thead > tr > th.gift-table-colour-tobedecided,
+.table > tbody > tr > th.gift-table-colour-tobedecided,
+.table > tfoot > tr > th.gift-table-colour-tobedecided,
+.table > thead > tr.gift-table-colour-tobedecided > td,
+.table > tbody > tr.gift-table-colour-tobedecided > td,
+.table > tfoot > tr.gift-table-colour-tobedecided > td,
+.table > thead > tr.gift-table-colour-tobedecided > th,
+.table > tbody > tr.gift-table-colour-tobedecided > th,
+.table > tfoot > tr.gift-table-colour-tobedecided > th {
+  background-color: #e74c3c;
+}
+.table-hover > tbody > tr > td.gift-table-colour-tobedecided:hover,
+.table-hover > tbody > tr > th.gift-table-colour-tobedecided:hover,
+.table-hover > tbody > tr.gift-table-colour-tobedecided:hover > td,
+.table-hover > tbody > tr:hover > .gift-table-colour-tobedecided,
+.table-hover > tbody > tr.gift-table-colour-tobedecided:hover > th {
+  background-color: #e43725;
+}
+
+.table > thead > tr > td.gift-table-colour-tobepurchased,
+.table > tbody > tr > td.gift-table-colour-tobepurchased,
+.table > tfoot > tr > td.gift-table-colour-tobepurchased,
+.table > thead > tr > th.gift-table-colour-tobepurchased,
+.table > tbody > tr > th.gift-table-colour-tobepurchased,
+.table > tfoot > tr > th.gift-table-colour-tobepurchased,
+.table > thead > tr.gift-table-colour-tobepurchased > td,
+.table > tbody > tr.gift-table-colour-tobepurchased > td,
+.table > tfoot > tr.gift-table-colour-tobepurchased > td,
+.table > thead > tr.gift-table-colour-tobepurchased > th,
+.table > tbody > tr.gift-table-colour-tobepurchased > th,
+.table > tfoot > tr.gift-table-colour-tobepurchased > th {
+  background-color: #f39c12;
+}
+.table-hover > tbody > tr > td.gift-table-colour-tobepurchased:hover,
+.table-hover > tbody > tr > th.gift-table-colour-tobepurchased:hover,
+.table-hover > tbody > tr.gift-table-colour-tobepurchased:hover > td,
+.table-hover > tbody > tr:hover > .gift-table-colour-tobepurchased,
+.table-hover > tbody > tr.gift-table-colour-tobepurchased:hover > th {
+  background-color: #e08e0b;
+}
+
+.table > thead > tr > td.gift-table-colour-tobedelivered,
+.table > tbody > tr > td.gift-table-colour-tobedelivered,
+.table > tfoot > tr > td.gift-table-colour-tobedelivered,
+.table > thead > tr > th.gift-table-colour-tobedelivered,
+.table > tbody > tr > th.gift-table-colour-tobedelivered,
+.table > tfoot > tr > th.gift-table-colour-tobedelivered,
+.table > thead > tr.gift-table-colour-tobedelivered > td,
+.table > tbody > tr.gift-table-colour-tobedelivered > td,
+.table > tfoot > tr.gift-table-colour-tobedelivered > td,
+.table > thead > tr.gift-table-colour-tobedelivered > th,
+.table > tbody > tr.gift-table-colour-tobedelivered > th,
+.table > tfoot > tr.gift-table-colour-tobedelivered > th {
+background-color: #3498db;
+}
+.table-hover > tbody > tr > td.gift-table-colour-tobedelivered:hover,
+.table-hover > tbody > tr > th.gift-table-colour-tobedelivered:hover,
+.table-hover > tbody > tr.gift-table-colour-tobedelivered:hover > td,
+.table-hover > tbody > tr:hover > .gift-table-colour-tobedelivered,
+.table-hover > tbody > tr.gift-table-colour-tobedelivered:hover > th {
+background-color: #258cd1;
+}
+
+.table > thead > tr > td.gift-table-colour-receiptconfirmed,
+.table > tbody > tr > td.gift-table-colour-receiptconfirmed,
+.table > tfoot > tr > td.gift-table-colour-receiptconfirmed,
+.table > thead > tr > th.gift-table-colour-receiptconfirmed,
+.table > tbody > tr > th.gift-table-colour-receiptconfirmed,
+.table > tfoot > tr > th.gift-table-colour-receiptconfirmed,
+.table > thead > tr.gift-table-colour-receiptconfirmed > td,
+.table > tbody > tr.gift-table-colour-receiptconfirmed > td,
+.table > tfoot > tr.gift-table-colour-receiptconfirmed > td,
+.table > thead > tr.gift-table-colour-receiptconfirmed > th,
+.table > tbody > tr.gift-table-colour-receiptconfirmed > th,
+.table > tfoot > tr.gift-table-colour-receiptconfirmed > th {
+  background-color: #18bc9c;
+}
+.table-hover > tbody > tr > td.gift-table-colour-receiptconfirmed:hover,
+.table-hover > tbody > tr > th.gift-table-colour-receiptconfirmed:hover,
+.table-hover > tbody > tr.gift-table-colour-receiptconfirmed:hover > td,
+.table-hover > tbody > tr:hover > .gift-table-colour-receiptconfirmed,
+.table-hover > tbody > tr.gift-table-colour-receiptconfirmed:hover > th {
+  background-color: #15a589;
+}
