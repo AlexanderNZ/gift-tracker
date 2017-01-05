@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import { Person } from "./data/person";
+import {Person} from "../data/person";
 
 @Injectable()
 export class TrackedPeopleService {

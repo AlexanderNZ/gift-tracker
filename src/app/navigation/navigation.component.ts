@@ -3,14 +3,11 @@ import {Overlay} from "angular2-modal";
 import {Modal} from "angular2-modal/plugins/bootstrap";
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  selector: 'app-ui-top-navigation',
-  templateUrl: 'top-navigation.component.html',
-  styleUrls: ['top-navigation.component.css']
+  selector: 'app-navigation',
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.css']
 })
-export class TopNavigationComponent implements OnInit {
-
-  @ViewChild('topnav') topnav: ElementRef;
+export class NavigationComponent implements OnInit {
 
   constructor(overlay: Overlay, vcRef: ViewContainerRef, public modal: Modal) {
     overlay.defaultViewContainer = vcRef;
@@ -60,10 +57,6 @@ export class TopNavigationComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  toggle() {
-    this.topnav.nativeElement.classList.toggle(['responsive']);
   }
 
 }

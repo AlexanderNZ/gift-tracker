@@ -1,6 +1,6 @@
 import {Component, OnInit} from "@angular/core";
-import {Person} from "../../data/person";
-import {TrackedPeopleService} from "../../tracked-people.service";
+import {TrackedPeopleService} from "../services/tracked-people.service";
+import {Person} from "../data/person";
 
 @Component({
   selector: 'app-person-generator',
