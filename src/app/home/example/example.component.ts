@@ -24,4 +24,8 @@ export class ExampleComponent implements OnInit {
   updateStatus(index, newStatus) {
     this.trackedPeopleService.person[index].status = newStatus;
   }
+
+  removeItem(index){
+    this.trackedPeopleService.person.splice(index, 1);
+  }
 }

@@ -16,7 +16,7 @@
     <td>{{item.status}}</td>
     <td>
       <div class="btn-group">
-        <a href="#" class="btn btn-info btn-xs dropdown-toggle {{item.status | tableColourPipe}}"
+        <a href="#" class="btn btn-default btn-xs dropdown-toggle"
            data-toggle="dropdown">Update Status</a>
         <ul class="dropdown-menu">
           <li><a (click)="updateStatus(i, 'To Be Decided')">To Be Decided</a></li>
@@ -24,6 +24,12 @@
           <li><a (click)="updateStatus(i, 'To Be Delivered')">To Be Delivered</a></li>
           <li><a (click)="updateStatus(i, 'Receipt Confirmed')">Receipt Confirmed</a></li>
         </ul>
+      </div>
+    </td>
+    <td>
+      <div class="btn-group">
+        <a href="#" class="btn btn-default btn-xs" (click)="removeItem(i)"
+           data-toggle="dropdown">Remove Row</a>
       </div>
     </td>
   </tr>
