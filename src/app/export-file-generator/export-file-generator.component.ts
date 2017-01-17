@@ -18,11 +18,9 @@ export class ExportFileGeneratorComponent implements OnInit {
 
   savePretty(){
 
-    let fileContent = "";
+    let fileContent = "My Christmas List \n\n";
     for (let i = 0; i < this.trackedPeopleService.person.length; i++){
-      // console.log(this.trackedPeopleService.person[i].toString());
-      fileContent =+ "" + this.trackedPeopleService.person[i].toString();
-      console.log(fileContent)
+      fileContent += "" + this.trackedPeopleService.person[i].toString() + "\n";
     }
 
     let blob = new Blob([fileContent], {type: "text/plain;charset=utf-8"});
