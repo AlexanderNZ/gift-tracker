@@ -21,8 +21,8 @@ export class ExampleComponent implements OnInit {
     let kelly = new Person("Cassidy", "Elwood", "Comic Books", 1);
     this.trackedPeopleService.person = [troy, alan, russell, interns, kelly];
 
-    for (let i = 0; i < this.trackedPeopleService.person.length; i++){
-      console.log(this.trackedPeopleService.person[i].toString())
+    for (let i = 0; i <= this.trackedPeopleService.person.length; i++){
+      console.log(this.trackedPeopleService.person[i].toString());
     }
   }
 

@@ -1,3 +1,39 @@
-<p>
-  export-file-generator works!
-</p>
+<div class="container">
+  <div>
+    <p>There are two ways to save, Private or Pretty.</p>
+    <table class="table table-bordered table-hover">
+      <thead>
+      <tr>
+        <th>Method</th>
+        <th>Description</th>
+        <th>Example</th>
+        <th>Link</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Pretty</td>
+        <td>Pretty is easy to read, you can print it out and it will make some kind of sense.
+          Obviously that means nosy parkers trying to find out what you're getting them could read this though -
+          with great power comes great responsibility!
+        </td>
+        <td></td>
+        <td>
+          <a class="btn btn-info btn-xs" (click)="savePretty()">Download</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Private</td>
+        <td>Private lists are not readable by humans. They're encoded so that comuters can read them, but if someone got
+          their hands
+          on your list, they'd need to do some work on it before they could read it in any way that made sense
+        </td>
+        <td></td>
+        <td>
+          <a class="btn btn-info btn-xs" (click)="saveUgly()">Download</a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

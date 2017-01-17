@@ -14,10 +14,12 @@ import {TrackedPeopleService} from "./services/tracked-people.service";
 import { ModalModule } from 'angular2-modal';
 import { BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ExportFileGeneratorComponent } from "./export-file-generator/export-file-generator.component";
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: '**', component: HomeComponent }
+  // { path: '**', component: HomeComponent },
+  { path: 'export', component: ExportFileGeneratorComponent }
 ];
 
 @NgModule({
@@ -29,6 +31,7 @@ const appRoutes: Routes = [
     TableColourPipe,
     PersonGeneratorComponent,
     NavigationComponent,
+    ExportFileGeneratorComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
