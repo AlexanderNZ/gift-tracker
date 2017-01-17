@@ -10,6 +10,7 @@ import {TrackedPeopleService} from "../../services/tracked-people.service";
 export class ExampleComponent implements OnInit {
 
   constructor(private trackedPeopleService: TrackedPeopleService) {
+
   }
 
   ngOnInit() {
@@ -19,6 +20,10 @@ export class ExampleComponent implements OnInit {
     let interns = new Person("Mum", "", "Voucher for 10 hours of family gardening time", 1);
     let kelly = new Person("Cassidy", "Elwood", "Comic Books", 1);
     this.trackedPeopleService.person = [troy, alan, russell, interns, kelly];
+
+    for (let i = 0; i < this.trackedPeopleService.person.length; i++){
+      console.log(this.trackedPeopleService.person[i].toString())
+    }
   }
 
   updateStatus(index, newStatus) {

@@ -52,4 +52,11 @@ export class Person {
   set status(value: string) {
     this._status = value;
   }
+
+  toString() {
+    let name = "Name: " + this.firstName + " " + this.lastName + "\n";
+    let gift = "Gift: " + this.gift + "\n";
+    let giftStatus = "Gift Status: " + this.status + "\n";
+    return name + gift + giftStatus
+  }
 }
