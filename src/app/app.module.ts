@@ -18,9 +18,11 @@ import { ExportFileGeneratorComponent } from "./export-file-generator/export-fil
 import { ImportDataComponent } from './import-data/import-data.component';
 
 const appRoutes: Routes = [
+
+  { path: 'export', component: ExportFileGeneratorComponent },
+  { path: 'import', component: ImportDataComponent },
   { path: '', component: HomeComponent },
-  // { path: '**', component: HomeComponent },
-  { path: 'export', component: ExportFileGeneratorComponent }
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
