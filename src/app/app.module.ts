@@ -15,6 +15,7 @@ import { ModalModule } from 'angular2-modal';
 import { BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ExportFileGeneratorComponent } from "./export-file-generator/export-file-generator.component";
+import { ImportDataComponent } from './import-data/import-data.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     TableColourPipe,
     PersonGeneratorComponent,
     NavigationComponent,
-    ExportFileGeneratorComponent
+    ExportFileGeneratorComponent,
+    ImportDataComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
