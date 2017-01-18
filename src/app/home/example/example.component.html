@@ -15,21 +15,21 @@
     <td>{{item.status}}</td>
     <td>
       <div class="dropdown show">
-        <a class="btn btn-secondary  btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Update Status
         </a>
 
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" (click)="updateStatus(i, 'To Be Decided')">To Be Decided</a>
-          <a class="dropdown-item" (click)="updateStatus(i, 'To Be Fulfilled')">To Be Fulfilled</a>
-          <a class="dropdown-item" (click)="updateStatus(i, 'To Be Delivered')">To Be Delivered</a>
-          <a class="dropdown-item" (click)="updateStatus(i, 'Receipt Confirmed')">Receipt Confirmed</a>
+          <a class="dropdown-item" href="#" (click)="updateStatus(i, 'To Be Decided')">To Be Decided</a>
+          <a class="dropdown-item" href="#" (click)="updateStatus(i, 'To Be Fulfilled')">To Be Fulfilled</a>
+          <a class="dropdown-item" href="#" (click)="updateStatus(i, 'To Be Delivered')">To Be Delivered</a>
+          <a class="dropdown-item" href="#" (click)="updateStatus(i, 'Receipt Confirmed')">Receipt Confirmed</a>
         </div>
       </div>
 
     </td>
     <td>
-      <button type="button" class="btn btn-primary btn-sm" (click)="removeItem(i)">Remove Row</button>
+      <button type="button" class="btn btn-primary btn-sm" href="#" (click)="removeItem(i)">Remove Row</button>
     </td>
   </tr>
   </tbody>
