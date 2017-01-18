@@ -15,7 +15,7 @@
     <td>{{item.status}}</td>
     <td>
       <div class="dropdown">
-        <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="btn btn-primary btn-sm dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Update Status
         </a>
 
@@ -29,8 +29,36 @@
 
     </td>
     <td>
-      <button type="button" class="btn btn-primary btn-sm" href="#" (click)="removeItem(i)">Remove Row</button>
+      <button type="button" class="btn btn-danger btn-sm" href="#" (click)="removeItem(i)">Remove Row</button>
     </td>
   </tr>
   </tbody>
 </table>
+
+<div class="card-columns">
+<div *ngFor="let item of trackedPeopleService.person; let i = index" class="card {{item.status | cardOutlineColour }}" style="width: 20rem;">
+  <div class="card-block">
+    <h4 class="card-title">{{item.firstName + " " + item.lastName}}</h4>
+    <p class="card-text">{{item.gift}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Status: {{item.status}}</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-block">
+    <div class="dropdown">
+      <a class="btn btn-primary btn-sm dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Update Status
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#" (click)="updateStatus(i, 'To Be Decided')">To Be Decided</a>
+        <a class="dropdown-item" href="#" (click)="updateStatus(i, 'To Be Fulfilled')">To Be Fulfilled</a>
+        <a class="dropdown-item" href="#" (click)="updateStatus(i, 'To Be Delivered')">To Be Delivered</a>
+        <a class="dropdown-item" href="#" (click)="updateStatus(i, 'Receipt Confirmed')">Receipt Confirmed</a>
+      </div>
+    </div><br>
+    <button type="button" class="btn btn-danger btn-sm" href="#" (click)="removeItem(i)">Remove Item</button>
+  </div>
+</div>
+</div>

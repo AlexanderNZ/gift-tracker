@@ -121,3 +121,24 @@
   background-color: #d0e9c6;
   border-color: #d0e9c6;
 }
+
+
+.card-outline-tobedelivered {
+  background-color: transparent;
+  border-color: #0275d8;
+}
+
+.card-outline-receiptconfirmed {
+  background-color: transparent;
+  border-color: #5cb85c;
+}
+
+.card-outline-tobefulfilled {
+  background-color: transparent;
+  border-color: #ccc;
+}
+
+.card-outline-tobedecided {
+  background-color: transparent;
+  border-color: #d9534f;
+}
