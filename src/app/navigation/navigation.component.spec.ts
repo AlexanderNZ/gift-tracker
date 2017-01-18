@@ -1,9 +1,6 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-
-import { NavigationComponent } from './navigation.component';
+import {async, ComponentFixture, TestBed} from "@angular/core/testing";
+import {NavigationComponent} from "./navigation.component";
 
 describe('NavigationComponent', () => {
   let component: NavigationComponent;
@@ -11,9 +8,9 @@ describe('NavigationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavigationComponent ]
+      declarations: [NavigationComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

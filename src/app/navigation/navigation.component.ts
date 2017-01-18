@@ -1,4 +1,4 @@
-import {Component, OnInit, ChangeDetectionStrategy, ViewChild, ElementRef, ViewContainerRef} from "@angular/core";
+import {Component, OnInit, ViewContainerRef} from "@angular/core";
 import {Overlay} from "angular2-modal";
 import {Modal} from "angular2-modal/plugins/bootstrap";
 

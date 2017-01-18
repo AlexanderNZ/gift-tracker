@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import * as fileSaver from 'file-saver';
+import {Component, OnInit} from "@angular/core";
+import * as fileSaver from "file-saver";
 import {TrackedPeopleService} from "../services/tracked-people.service";
 
 @Component({
@@ -16,10 +16,10 @@ export class ExportFileGeneratorComponent implements OnInit {
 
   }
 
-  savePretty(){
+  savePretty() {
 
     let fileContent = "My Christmas List \n\n";
-    for (let i = 0; i < this.trackedPeopleService.person.length; i++){
+    for (let i = 0; i < this.trackedPeopleService.person.length; i++) {
       fileContent += "" + this.trackedPeopleService.person[i].toString() + "\n";
     }
 
@@ -27,10 +27,10 @@ export class ExportFileGeneratorComponent implements OnInit {
     fileSaver.saveAs(blob, "christmas-list.txt");
   }
 
-  saveUgly(){
+  saveUgly() {
 
     let fileContent = "My Christmas List \n\n";
-    for (let i = 0; i < this.trackedPeopleService.person.length; i++){
+    for (let i = 0; i < this.trackedPeopleService.person.length; i++) {
       fileContent += "" + this.trackedPeopleService.person[i].toString() + "\n";
     }
 

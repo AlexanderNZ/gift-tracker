@@ -12,6 +12,7 @@
 .table > tfoot > tr.gift-table-colour-tobedecided > th {
   background-color: #f2dede;
 }
+
 .table-hover > tbody > tr > td.gift-table-colour-tobedecided:hover,
 .table-hover > tbody > tr > th.gift-table-colour-tobedecided:hover,
 .table-hover > tbody > tr.gift-table-colour-tobedecided:hover > td,
@@ -34,6 +35,7 @@
 .table > tfoot > tr.gift-table-colour-tobefulfilled > th {
   background-color: #fcf8e3;
 }
+
 .table-hover > tbody > tr > td.gift-table-colour-tobefulfilled:hover,
 .table-hover > tbody > tr > th.gift-table-colour-tobefulfilled:hover,
 .table-hover > tbody > tr.gift-table-colour-tobefulfilled:hover > td,
@@ -56,6 +58,7 @@
 .table > tfoot > tr.gift-table-colour-tobedelivered > th {
   background-color: #d9edf7;
 }
+
 .table-hover > tbody > tr > td.gift-table-colour-tobedelivered:hover,
 .table-hover > tbody > tr > th.gift-table-colour-tobedelivered:hover,
 .table-hover > tbody > tr.gift-table-colour-tobedelivered:hover > td,
@@ -78,6 +81,7 @@
 .table > tfoot > tr.gift-table-colour-receiptconfirmed > th {
   background-color: #dff0d8;
 }
+
 .table-hover > tbody > tr > td.gift-table-colour-receiptconfirmed:hover,
 .table-hover > tbody > tr > th.gift-table-colour-receiptconfirmed:hover,
 .table-hover > tbody > tr.gift-table-colour-receiptconfirmed:hover > td,
@@ -90,6 +94,7 @@
   background-color: #f2dede;
   border-color: #f2dede;
 }
+
 .gift-table-colour-tobedecided:hover {
   background-color: #ebcccc;
   border-color: #ebcccc;
@@ -99,6 +104,7 @@
   background-color: #fcf8e3;
   border-color: #fcf8e3;
 }
+
 .gift-table-colour-tobefulfilled:hover {
   background-color: #faf2cc;
   border-color: #faf2cc;
@@ -108,6 +114,7 @@
   background-color: #d9edf7;
   border-color: #d9edf7;
 }
+
 .gift-table-colour-tobedelivered:hover {
   background-color: #c4e3f3;
   border-color: #c4e3f3;
@@ -117,11 +124,11 @@
   background-color: #dff0d8;
   border-color: #dff0d8;
 }
+
 .gift-table-colour-receiptconfirmed:hover {
   background-color: #d0e9c6;
   border-color: #d0e9c6;
 }
-
 
 .card-outline-tobedelivered {
   background-color: transparent;

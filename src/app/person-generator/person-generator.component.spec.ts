@@ -1,9 +1,6 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-
-import { PersonGeneratorComponent } from './person-generator.component';
+import {async, ComponentFixture, TestBed} from "@angular/core/testing";
+import {PersonGeneratorComponent} from "./person-generator.component";
 
 describe('PersonGeneratorComponent', () => {
   let component: PersonGeneratorComponent;
@@ -11,9 +8,9 @@ describe('PersonGeneratorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PersonGeneratorComponent ]
+      declarations: [PersonGeneratorComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -1,7 +1,5 @@
 /* tslint:disable:no-unused-variable */
-
-import { TestBed, async } from '@angular/core/testing';
-import { CardOutlineColourPipe } from './card-outline-colour.pipe';
+import {CardOutlineColourPipe} from "./card-outline-colour.pipe";
 
 describe('CardOutlineColourPipe', () => {
   it('create an instance', () => {

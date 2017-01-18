@@ -5,10 +5,10 @@ export class Person {
     this._lastName = lastName;
     this._gift = gift;
     this._status = this._giftStatus[status];
-    this.person_id = 1
+    this._notesSection = ""
   }
 
-  public person_id: number;
+  private _notesSection: string;
   private _firstName: string;
   private _lastName: string;
   private _gift: string;
@@ -51,6 +51,14 @@ export class Person {
 
   set status(value: string) {
     this._status = value;
+  }
+
+  get notesSection(): string {
+    return this._notesSection;
+  }
+
+  set notesSection(value: string) {
+    this._notesSection = value;
   }
 
   toString() {

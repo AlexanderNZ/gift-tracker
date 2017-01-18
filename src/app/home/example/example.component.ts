@@ -19,7 +19,7 @@ export class ExampleComponent implements OnInit {
     this.trackedPeopleService.person[index].status = newStatus;
   }
 
-  removeItem(index){
+  removeItem(index) {
     this.trackedPeopleService.person.splice(index, 1);
   }
 }
