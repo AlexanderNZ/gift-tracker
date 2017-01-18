@@ -65,6 +65,7 @@ export class Person {
     let name = "Name: " + this.firstName + " " + this.lastName + "\n";
     let gift = "Gift: " + this.gift + "\n";
     let giftStatus = "Gift Status: " + this.status + "\n";
-    return name + gift + giftStatus
+    let notes = "Notes:" + this.notesSection + "\n";
+    return name + gift + giftStatus + notes
   }
 }
