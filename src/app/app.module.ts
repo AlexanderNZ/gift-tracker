@@ -14,13 +14,11 @@ import {ModalModule} from "angular2-modal";
 import {BootstrapModalModule} from "angular2-modal/plugins/bootstrap";
 import {NavigationComponent} from "./navigation/navigation.component";
 import {ExportFileGeneratorComponent} from "./export-file-generator/export-file-generator.component";
-import {ImportDataComponent} from "./import-data/import-data.component";
 import {CardOutlineColourPipe} from "./pipes/card-outline-colour.pipe";
 
 const appRoutes: Routes = [
 
   {path: 'export', component: ExportFileGeneratorComponent},
-  {path: 'import', component: ImportDataComponent},
   {path: '', component: HomeComponent},
   {path: '**', component: HomeComponent}
 ];
@@ -35,7 +33,6 @@ const appRoutes: Routes = [
     PersonGeneratorComponent,
     NavigationComponent,
     ExportFileGeneratorComponent,
-    ImportDataComponent,
     CardOutlineColourPipe
   ],
   imports: [
