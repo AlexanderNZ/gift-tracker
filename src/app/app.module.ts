@@ -15,10 +15,17 @@ import {BootstrapModalModule} from "angular2-modal/plugins/bootstrap";
 import {NavigationComponent} from "./navigation/navigation.component";
 import {ExportFileGeneratorComponent} from "./export-file-generator/export-file-generator.component";
 import {CardOutlineColourPipe} from "./pipes/card-outline-colour.pipe";
+import { AboutComponent } from './about/about.component';
+import { PurposeComponent } from './about/purpose/purpose.component';
+import { TeamComponent } from './about/team/team.component';
+import { ContributeComponent } from './about/contribute/contribute.component';
 
 const appRoutes: Routes = [
 
   {path: 'export', component: ExportFileGeneratorComponent},
+  {path: 'purpose', component: PurposeComponent},
+  {path: 'team', component: TeamComponent},
+  {path: 'contribute', component: ContributeComponent},
   {path: '', component: HomeComponent},
   {path: '**', component: HomeComponent}
 ];
@@ -33,7 +40,11 @@ const appRoutes: Routes = [
     PersonGeneratorComponent,
     NavigationComponent,
     ExportFileGeneratorComponent,
-    CardOutlineColourPipe
+    CardOutlineColourPipe,
+    AboutComponent,
+    PurposeComponent,
+    TeamComponent,
+    ContributeComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
