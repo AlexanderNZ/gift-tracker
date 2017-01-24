@@ -1,4 +1,6 @@
-<table class="table">
+<button type="button" id="toggleButton" class="btn btn-primary" (click)="toggleView()">Toggle View</button>
+
+<table *ngIf="viewMode === 0" class="table">
   <thead>
   <tr>
     <th>Recipient</th>
@@ -36,7 +38,7 @@
   </tbody>
 </table>
 
-<div class="card-columns">
+<div *ngIf="viewMode === 1" class="card-columns">
   <div *ngFor="let item of trackedPeopleService.person; let i = index" class="card {{item.status | cardOutlineColour }}"
        style="width: 20rem;">
     <div class="card-block">

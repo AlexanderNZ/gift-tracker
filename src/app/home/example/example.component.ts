@@ -13,6 +13,7 @@ export class ExampleComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
   updateStatus(index, newStatus) {
@@ -21,5 +22,15 @@ export class ExampleComponent implements OnInit {
 
   removeItem(index) {
     this.trackedPeopleService.person.splice(index, 1);
+  }
+
+  viewMode = 0;
+
+  toggleView(){
+    if (this.viewMode === 0){
+      this.viewMode = 1
+    } else {
+      this.viewMode = 0
+    }
   }
 }
