@@ -17,7 +17,11 @@ export class PersonGeneratorComponent implements OnInit {
   }
 
   addNewPerson(firstName, lastName, gift) {
-    this.trackedPeopleService.person.push(new Person(firstName, lastName, gift, 0))
+    let status = 0;
+    if(gift){
+      status = 1;
+    }
+    this.trackedPeopleService.person.push(new Person(firstName, lastName, gift, status))
   }
 
 }
